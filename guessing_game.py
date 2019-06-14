@@ -29,7 +29,9 @@ def start_game():
 			os.system('cls')
 			print("try again")
 			print(err)
-			start_game()
+			num_try=0
+			score = score - 1
+			continue
 
 		os.system('cls')
 	print("gg wp. your final score is {}".format(score))
