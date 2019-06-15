@@ -3,7 +3,7 @@ import os
 os.system('cls')
 
 
-def help(num_to_guess, num_try, score):
+def help(num_to_guess, num_try, score):	
 	if num_try != 0:
 		if num_try < num_to_guess:
 			print("you are lower. number of attempts {}".format(score))
@@ -35,8 +35,8 @@ def start_game():
 
 		os.system('cls')
 	print("gg wp. your final score is {}".format(score))
-	r = input("Would you like to play again? (y/n)")
-	if r == "yes":
+	r = input("Would you like to play again? (yes/no)")
+	if r.lower() == "yes" or r.lower() == "y":
 		os.system('cls')
 		num_try = 0
 		start_game()
